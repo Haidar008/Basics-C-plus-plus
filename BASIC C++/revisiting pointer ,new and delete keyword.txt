@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a=98;
+    int *ptr=&a;
+    cout<<"the value of a is "<<*ptr<<endl;
+    int *p=new int(67);
+    cout<<"the value is "<<*p<<endl;
+    float*q=new float(67.90);
+    cout<<"the vlaue is "<<*q<<endl;
+    int*arr=new int[3];
+    arr[0]=90;
+    arr[1]=78;
+    arr[2]=65;
+    delete[]arr;
+    cout<<arr[0]<<endl;
+    cout<<arr[1]<<endl;
+    cout<<arr[2]<<endl;
+}

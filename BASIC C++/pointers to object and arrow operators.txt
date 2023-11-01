@@ -1,0 +1,23 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+class item{
+    int id;
+    int price;
+    public:
+    void setdata(int i,int p){
+        id=i;
+        price=p;
+    }
+    void getdata(void){
+        cout<<"the id of this is item is "<<id<<endl;
+        cout<<"the price of this item is "<<price<<endl;
+    }
+};
+int main(){
+    item obj;
+    item*ptr=&obj;
+    (*ptr).setdata(100,678);
+    ptr->getdata();
+    return 0;
+}

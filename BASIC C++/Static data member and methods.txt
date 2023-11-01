@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class employee{
+    int id;
+    static int count;
+    public:
+    void setdata(void){
+        cout<<"enter the id of employee"<<endl;
+        cin>>id;
+    }
+    void getdata(void){
+        cout<<"the id of the employee is "<<id<<" and this is employee no "<<++count<<endl;
+    }
+    static void getcount(void){
+        cout<<"the value of count is "<<count<<endl;
+    }
+};
+int employee::count=100;
+int main(){
+    employee rohan,harish,alam;
+    alam.setdata();
+    alam.getdata();
+    employee::getcount();
+    
+    rohan.setdata();
+    rohan.getdata();
+    employee::getcount();
+    
+   harish.setdata();
+   harish.getdata();
+   employee::getcount();
+   
+   return 0;
+}
